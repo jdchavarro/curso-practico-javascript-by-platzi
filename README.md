@@ -1,1 +1,10 @@
 # platzi-curso-practico-javascript
+
+...
+
+## Taller #1: Figuras Geometricas
+
+- Primer: definir las formulas
+- Segundo: implementar la formulas en javascript
+- Tercero: crear funciones
+- Cuarto: integrar JS con HTML
