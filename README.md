@@ -8,3 +8,10 @@
 - Segundo: implementar la formulas en javascript
 - Tercero: crear funciones
 - Cuarto: integrar JS con HTML
+
+## Taller #2: Porcentajes y Descuentos
+
+- Primer: definir las formulas
+- Segundo: implementar la formulas en javascript
+- Tercero: crear funciones
+- Cuarto: integrar JS con HTML
