@@ -52,6 +52,11 @@ module.exports = {
       template: "./public/index.html",
       filename: "./index.html"
     }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: "./public/actividades/descuentos.html",
+      filename: "./actividades/descuentos.html"
+    }),
     new MiniCssExtractPlugin({
       filename: "styles/[name].css"
     })

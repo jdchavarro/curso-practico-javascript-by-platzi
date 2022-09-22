@@ -1,0 +1,11 @@
+h1 {
+  font-family: roboto;
+}
+
+p {
+  font-family: poppins;
+}
+
+header p {
+  color: var(--primary);
+}

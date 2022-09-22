@@ -1,0 +1,23 @@
+:root {
+  --light: #EAE8FF;
+  --dark: #2D3142;
+  --primary: #B0D7FF;
+  --secondary: #ADACB5;
+  --tertiary: #D8D5DB;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../assets/fonts/roboto.woff2') format('woff2'),
+		url('../assets/fonts/roboto.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../assets/fonts/poppins.woff2') format('woff2'),
+		url('../assets/fonts/poppins.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
