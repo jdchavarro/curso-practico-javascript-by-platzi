@@ -57,6 +57,31 @@ module.exports = {
       template: "./public/actividades/descuentos.html",
       filename: "./actividades/descuentos.html"
     }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: "./public/actividades/figuras.html",
+      filename: "./actividades/figuras.html"
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: "./public/actividades/mediana.html",
+      filename: "./actividades/mediana.html"
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: "./public/actividades/moda.html",
+      filename: "./actividades/moda.html"
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: "./public/actividades/promedio.html",
+      filename: "./actividades/promedio.html"
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: "./public/actividades/salario.html",
+      filename: "./actividades/salario.html"
+    }),
     new MiniCssExtractPlugin({
       filename: "styles/[name].css"
     })
