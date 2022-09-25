@@ -14,7 +14,7 @@ module.exports = {
     extensions: [".js"],
     alias: {
       "@styles": path.resolve(__dirname, "src/styles"),
-      "@images": path.resolve(__dirname, "src/assets/images")
+      "@images": path.resolve(__dirname, "src/assets/images"),
     }
   },
   module: {
@@ -53,7 +53,7 @@ module.exports = {
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({
-      filename: "style/[name].[contenthash].css"
+      filename: "styles/[name].[contenthash].css"
     })
   ],
   devServer: {
