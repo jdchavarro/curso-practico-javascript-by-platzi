@@ -23,4 +23,9 @@
   .card__icon {
     font-size: 8rem;
   }
+
+  .discount_form {
+    width: 600px;
+    margin: auto;
+  }
 }
