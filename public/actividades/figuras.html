@@ -38,7 +38,8 @@
     </section>
 
     <section class="shapes-form hidden" id="form-circle">
-      circle
+      <label for="circleRadio">Radio del Circulo</label>
+      <input id="circleRadio" type="number" />
       <button class="shapes-form__button" id="btnCalcCircle">CALCULAR</button>
     </section>
 
@@ -54,18 +55,6 @@
       <p class="messages__item">
         El perimetro calculado es: <span id="perimeter"></span>
       </p>
-    </section>
-
-    <section>
-      <h2>Calcula el area y perimetro de un cuadrado</h2>
-      <form action="">
-        <button type="button" onclick="calcularPerimetroCuadrado()">
-          Calcular el perimetro
-        </button>
-        <button type="button" onclick="calcularAreaCuadrado()">
-          Calcular el area
-        </button>
-      </form>
     </section>
 
     <section>
@@ -127,22 +116,6 @@
         </div>
         <button type="button" onclick="calcularAlturaIsosceles()">
           Calcular la altura
-        </button>
-      </form>
-    </section>
-
-    <section>
-      <h2>Calcula el area y perimetro de un circulo</h2>
-      <form action="">
-        <label for="radioCirculo"
-          >Escribe cuanto mide el radio del circulo</label
-        >
-        <input id="radioCirculo" type="number" />
-        <button type="button" onclick="calcularPerimetroCirculo()">
-          Calcular el perimetro
-        </button>
-        <button type="button" onclick="calcularAreaCirculo()">
-          Calcular el area
         </button>
       </form>
     </section>

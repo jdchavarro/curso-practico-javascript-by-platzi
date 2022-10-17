@@ -1,4 +1,6 @@
 const messages = document.getElementById("messages");
+const area = document.getElementById("area");
+const perimeter = document.getElementById("perimeter");
 
 /* Mostramos los formularios dependiendo de la forma solicitada */
 const btnSquare = document.getElementById("btnSquare");
@@ -32,8 +34,6 @@ btnTriangle.addEventListener("click", function(){
 // Codigo del Cuadrado
 const btnCalcSquare = document.getElementById("btnCalcSquare");
 const squareSide = document.getElementById("squareSide");
-const area = document.getElementById("area");
-const perimeter = document.getElementById("perimeter");
 
 const perimeterSquare = (side) => side * 4;
 const areaSquare = (side) => side ** 2;
@@ -44,7 +44,18 @@ btnCalcSquare.addEventListener("click", function(){
     messages.classList.remove("hidden");
 })
 
+// Codigo del Circulo
+const btnCalcCircle = document.getElementById("btnCalcCircle");
+const circleRadio = document.getElementById("circleRadio");
 
+const perimetroCircle = (radio) => (2 * Math.PI * radio).toFixed(2);
+const areaCircle = (radio) => (Math.PI * (radio ** 2)).toFixed(2);
+
+btnCalcCircle.addEventListener("click", function(){
+    area.innerHTML = areaCircle(parseInt(circleRadio.value));
+    perimeter.innerHTML = perimetroCircle(parseInt(circleRadio.value));
+    messages.classList.remove("hidden");
+})
 
 // Codigo del Triangulo
 const perimetoTriangulo = (lado1, lado2, base) => lado1 + lado2 + base;
@@ -78,8 +89,7 @@ const alturaTrianguloIsosceles = (lado1, lado2, lado3) => {
 };
 
 // Codigo del Circulo
-const perimetroCirculo = (radio) => 2 * Math.PI * radio;
-const areaCirculo = (radio) => Math.PI * (radio ** 2);
+
 
 // Aqui interactuamos con el HTML
 
