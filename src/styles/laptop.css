@@ -4,7 +4,7 @@
     font-size: 3rem;
   }
   
-  .options {
+  .principal-menu {
     padding-top: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 4rem;

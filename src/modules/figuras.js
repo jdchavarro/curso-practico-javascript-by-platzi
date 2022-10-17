@@ -1,3 +1,30 @@
+
+/* Mostramos los formularios dependiendo de la forma solicitada */
+const btnSquare = document.getElementById("btnSquare");
+const btnCircle = document.getElementById("btnCircle");
+const btnTriangle = document.getElementById("btnTriangle");
+const formSquare = document.getElementsByClassName("form-square")[0];
+const formCircle = document.getElementsByClassName("form-circle")[0];
+const formTriangle = document.getElementsByClassName("form-triangle")[0];
+
+btnSquare.addEventListener("click", function(){
+    formSquare.classList.remove("hidden");
+    formCircle.classList.add("hidden");
+    formTriangle.classList.add("hidden");
+});
+
+btnCircle.addEventListener("click", function(){
+    formSquare.classList.add("hidden");
+    formCircle.classList.remove("hidden");
+    formTriangle.classList.add("hidden");
+});
+
+btnTriangle.addEventListener("click", function(){
+    formSquare.classList.add("hidden");
+    formCircle.classList.add("hidden");
+    formTriangle.classList.remove("hidden");
+});
+
 // Codigo del Cuadrado
 const perimetoCuadrado = (lado) => lado * 4;
 const areaCuadrado = (lado) => lado ** 2;

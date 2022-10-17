@@ -94,15 +94,22 @@
   align-items: center;
   row-gap: 1rem;
   border: 1px solid var(--dark);
-  margin: 1rem;
+  border-radius: 2rem;
+  margin: 2rem;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .shapes-menu__shapes {
   width: 100%;
   display: inline-flex;
   justify-content: space-evenly;
+  color: var(--secondary);
+  font-size: 3rem;
+}
+
+.shapes-menu__shape:hover {
+  cursor: pointer;
 }
 
 .shapes-menu__shape--rot {
@@ -127,4 +134,8 @@
   border: 1px solid var(--dark);
   color: var(--dark);
   font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
 }
