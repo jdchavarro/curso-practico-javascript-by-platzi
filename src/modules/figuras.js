@@ -1,33 +1,50 @@
+const messages = document.getElementById("messages");
 
 /* Mostramos los formularios dependiendo de la forma solicitada */
 const btnSquare = document.getElementById("btnSquare");
 const btnCircle = document.getElementById("btnCircle");
 const btnTriangle = document.getElementById("btnTriangle");
-const formSquare = document.getElementsByClassName("form-square")[0];
-const formCircle = document.getElementsByClassName("form-circle")[0];
-const formTriangle = document.getElementsByClassName("form-triangle")[0];
+const formSquare = document.getElementById("form-square");
+const formCircle = document.getElementById("form-circle");
+const formTriangle = document.getElementById("form-triangle");
 
 btnSquare.addEventListener("click", function(){
     formSquare.classList.remove("hidden");
     formCircle.classList.add("hidden");
     formTriangle.classList.add("hidden");
+    messages.classList.add("hidden");
 });
 
 btnCircle.addEventListener("click", function(){
     formSquare.classList.add("hidden");
     formCircle.classList.remove("hidden");
     formTriangle.classList.add("hidden");
+    messages.classList.add("hidden");
 });
 
 btnTriangle.addEventListener("click", function(){
     formSquare.classList.add("hidden");
     formCircle.classList.add("hidden");
     formTriangle.classList.remove("hidden");
+    messages.classList.add("hidden");
 });
 
 // Codigo del Cuadrado
-const perimetoCuadrado = (lado) => lado * 4;
-const areaCuadrado = (lado) => lado ** 2;
+const btnCalcSquare = document.getElementById("btnCalcSquare");
+const squareSide = document.getElementById("squareSide");
+const area = document.getElementById("area");
+const perimeter = document.getElementById("perimeter");
+
+const perimeterSquare = (side) => side * 4;
+const areaSquare = (side) => side ** 2;
+
+btnCalcSquare.addEventListener("click", function(){
+    area.innerHTML = areaSquare(parseInt(squareSide.value));
+    perimeter.innerHTML = perimeterSquare(parseInt(squareSide.value));
+    messages.classList.remove("hidden");
+})
+
+
 
 // Codigo del Triangulo
 const perimetoTriangulo = (lado1, lado2, base) => lado1 + lado2 + base;

@@ -116,18 +116,42 @@
   transform: rotate(270deg);
 }
 
+.shapes-form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  font-size: 1.5rem;
+}
 
+.shapes-form__button {
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: var(--light);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
 
+/* MENSAJES */
+.messages {
+  margin: 2rem;
+}
+
+.messages__item > span {
+  font-style: italic;
+  font-weight: bold;
+}
 
 /** CLASES COMPARTIDAS ENTRE ARCHIVOS */
 
 .goBack {
-  margin-top: 4rem;
+  margin: 4rem 0;
   text-align: center;
 }
 
 .goBack__button {
-  font-family: poppins;
   text-decoration: none;
   padding: 1rem;
   background-color: var(--primary);
