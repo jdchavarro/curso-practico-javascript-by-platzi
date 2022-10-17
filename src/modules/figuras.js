@@ -42,7 +42,7 @@ btnCalcSquare.addEventListener("click", function(){
     area.innerHTML = areaSquare(parseInt(squareSide.value));
     perimeter.innerHTML = perimeterSquare(parseInt(squareSide.value));
     messages.classList.remove("hidden");
-})
+});
 
 // Codigo del Circulo
 const btnCalcCircle = document.getElementById("btnCalcCircle");
@@ -55,7 +55,7 @@ btnCalcCircle.addEventListener("click", function(){
     area.innerHTML = areaCircle(parseInt(circleRadio.value));
     perimeter.innerHTML = perimetroCircle(parseInt(circleRadio.value));
     messages.classList.remove("hidden");
-})
+});
 
 // Codigo del Triangulo
 const btnCalcTriangle = document.getElementById("btnCalcTriangle");
@@ -80,35 +80,4 @@ btnCalcTriangle.addEventListener("click", function(){
         parseInt(triangleSideTwo.value),
         parseInt(triangleSideThree.value));
     messages.classList.remove("hidden");
-})
-
-
-// Codigo del Triangulo
-
-
-// Triangulo isosceles
-const dosPrimerosIguales = (a, b, c) => (a == b) && (a != c);
-const esIsosceles = (lado1, lado2, lado3) =>{
-    return dosPrimerosIguales(lado1, lado2, lado3) ||
-           dosPrimerosIguales(lado1, lado3, lado2) ||
-           dosPrimerosIguales(lado2, lado3, lado1);
-}
-const calcularBaseHipotenusa = (lado1, lado2, lado3) => {
-    if (lado1 == lado2) {
-        return [lado3, lado1];
-    }
-    if (lado1 == lado3) {
-        return [lado2, lado1];
-    }
-    if (lado2 == lado3) {
-        return [lado1, lado2];
-    }
-}
-const alturaTrianguloIsosceles = (lado1, lado2, lado3) => {
-    //Comprobar que sea isosceles
-    if (esIsosceles(lado1, lado2, lado3)) {
-        let [base, hipotenusa] = calcularBaseHipotenusa(lado1, lado2, lado3);
-        let altura = Math.sqrt((hipotenusa**2) - ((base / 2)**2));
-        return altura;
-    }
-};
+});
