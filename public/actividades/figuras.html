@@ -44,7 +44,12 @@
     </section>
 
     <section class="shapes-form hidden" id="form-triangle">
-      triangle
+      <label for="triangleSideOne">Lado 1 del Triangulo</label>
+      <input id="triangleSideOne" type="number" />
+      <label for="triangleSideTwo">Lado 2 del Triangulo</label>
+      <input id="triangleSideTwo" type="number" />
+      <label for="triangleSideThree">Lado 3 del Triangulo</label>
+      <input id="triangleSideThree" type="number" />
       <button class="shapes-form__button" id="btnCalcTriangle">CALCULAR</button>
     </section>
 
@@ -55,42 +60,6 @@
       <p class="messages__item">
         El perimetro calculado es: <span id="perimeter"></span>
       </p>
-    </section>
-
-    <section>
-      <h2>Calcula el area y perimetro de un triangulo</h2>
-      <form action="">
-        <div>
-          <label for="lado1Triangulo"
-            >Escribe cuanto mide el lado1 de tu triangulo</label
-          >
-          <input id="lado1Triangulo" type="number" />
-        </div>
-        <div>
-          <label for="lado2Triangulo"
-            >Escribe cuanto mide el lado2 de tu triangulo</label
-          >
-          <input id="lado2Triangulo" type="number" />
-        </div>
-        <div>
-          <label for="baseTriangulo"
-            >Escribe cuanto mide la base de tu triangulo</label
-          >
-          <input id="baseTriangulo" type="number" />
-        </div>
-        <div>
-          <label for="alturaTriangulo"
-            >Escribe cuanto mide la altura de tu triangulo</label
-          >
-          <input id="alturaTriangulo" type="number" />
-        </div>
-        <button type="button" onclick="calcularPerimetroTriangulo()">
-          Calcular el perimetro
-        </button>
-        <button type="button" onclick="calcularAreaTriangulo()">
-          Calcular el area
-        </button>
-      </form>
     </section>
 
     <section>
