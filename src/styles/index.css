@@ -7,7 +7,10 @@
 :root {
   font-size: 62.5%;
   background-color: var(--light);
+  font-family: poppins;
 }
+
+/* INDEX */
 
 .header {
   display: flex;
@@ -27,7 +30,7 @@
   color: var(--secondary);
 }
 
-.options {
+.principal-menu {
   padding-top: 1rem;
   display: grid;
   justify-items: center;
@@ -61,13 +64,10 @@
 
 .card__description {
   padding: 1rem;
-  font-family: poppins;
   text-align: center;
 }
 
-.discount_form {
-  font-family: poppins;
-}
+/* DESCUENTOS */
 
 .discount_form__input_group {
   display: flex;
@@ -85,6 +85,34 @@
   width: 80%;
   height: 3rem;
 }
+
+/* FIGURAS */
+
+.shapes-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  border: 1px solid var(--dark);
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.shapes-menu__shapes {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+.shapes-menu__shape--rot {
+  transform: rotate(270deg);
+}
+
+
+
+
+/** CLASES COMPARTIDAS ENTRE ARCHIVOS */
 
 .goBack {
   margin-top: 4rem;
