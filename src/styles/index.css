@@ -137,6 +137,7 @@
 /* MENSAJES */
 .messages {
   margin: 2rem;
+  text-align: center;
 }
 
 .messages__item > span {

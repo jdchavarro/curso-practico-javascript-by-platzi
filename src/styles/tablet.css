@@ -3,23 +3,23 @@
     margin: 2rem;
     font-size: 2rem;
   }
-  
+
   .principal-menu {
     padding-top: 2rem;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
   }
-  
+
   .card {
     width: 30rem;
     height: 30rem;
     font-size: 2rem;
   }
-  
+
   .card__title {
     border-bottom-width: 2px;
   }
-  
+
   .card__icon {
     font-size: 8rem;
   }
@@ -27,5 +27,43 @@
   .discount_form {
     width: 600px;
     margin: auto;
+  }
+
+  /* FIGURAS */
+
+  .shapes-menu {
+    margin: 4rem;
+    font-size: 3.5rem;
+  }
+
+  .shapes-menu__shapes {
+    font-size: 6rem;
+  }
+
+  .shapes-form {
+    font-size: 4.5rem;
+  }
+
+  .shapes-form input {
+    width: 75%;
+    height: 4rem;
+    font-size: 3rem;
+  }
+
+  .shapes-form__button {
+    font-size: 2rem;
+  }
+
+  /* MENSAJES */
+  .messages {
+    font-size: 2.5rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .goBack__button {
+    font-size: 2.5rem;
   }
 }

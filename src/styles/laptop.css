@@ -29,4 +29,12 @@
   .discount_form__input {
     height: 4rem;
   }
+
+  /* FIGURAS */
+
+  .shapes-menu {
+    width: 75%;
+    margin: 4rem auto;
+    font-size: 3.5rem;
+  }
 }
