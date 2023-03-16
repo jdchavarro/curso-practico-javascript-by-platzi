@@ -9,7 +9,6 @@ module.exports = {
     descuentos: './src/modules/descuentos.js',
     figuras: './src/modules/figuras.js',
     medidasTendenciaCentral: './src/modules/medidas_tendencia_central.js',
-    salario: './src/modules/salario.js',
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -76,12 +75,6 @@ module.exports = {
       template: "./public/actividades/medidas_tendencia_central.html",
       filename: "./actividades/medidas_tendencia_central.html",
       chunks: ['index','medidasTendenciaCentral']
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: "./public/actividades/salario.html",
-      filename: "./actividades/salario.html",
-      chunks: ['index','salario']
     }),
     new MiniCssExtractPlugin({
       filename: "styles/[name].css"

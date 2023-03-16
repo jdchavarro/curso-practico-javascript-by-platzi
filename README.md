@@ -5,7 +5,7 @@ Es un proyecto basado en el curso practico de javascript de platzi, en el que se
 Una vez descargado el proyecto:
 `npm install`
 
-Proyecto aun en desarrollo, para ver avances ejecutar
+Proyecto finalizado, correr el siguiente comando:
 `npm run start`
 
 La ultima ejecucion completa puede encontrarse en la ruta
@@ -13,11 +13,8 @@ La ultima ejecucion completa puede encontrarse en la ruta
 
 ...
 
-El proyecto consta de 6 mini programas
+El proyecto consta de 3 mini programas
 
 1. Calcula el descuento en productos
 2. Calcula el area y promedio de figuras geometricas (cuadrado, circulo y triangulo)
-3. Calcula la mediada de numeros dados
-4. Calcula la moda de numeros dados
-5. Calcula el promedio de numeros dados
-6. Calcula el salario
+3. Calcula las medidas de tendencia central (Mediana, moda y media aritmetica) de los numeros proporcionados
