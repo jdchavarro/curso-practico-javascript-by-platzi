@@ -66,4 +66,19 @@
   .goBack__button {
     font-size: 2.5rem;
   }
+
+  /* MEDIDAS DE TENCENDIA CENTRAL */
+.mtc-form {
+  font-size: 4.5rem;
+}
+
+.mtc-form input {
+  width: 75%;
+  height: 4rem;
+  font-size: 3rem;
+}
+
+.mtc-form__button {
+  font-size: 2rem;
+}
 }

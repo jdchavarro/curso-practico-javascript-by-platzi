@@ -8,9 +8,7 @@ module.exports = {
     index: './src/index.js',
     descuentos: './src/modules/descuentos.js',
     figuras: './src/modules/figuras.js',
-    mediana: './src/modules/mediana.js',
-    moda: './src/modules/moda.js',
-    promedio: './src/modules/promedio.js',
+    medidasTendenciaCentral: './src/modules/medidas_tendencia_central.js',
     salario: './src/modules/salario.js',
   },
   output: {
@@ -75,21 +73,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: "./public/actividades/mediana.html",
-      filename: "./actividades/mediana.html",
-      chunks: ['index','mediana']
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: "./public/actividades/moda.html",
-      filename: "./actividades/moda.html",
-      chunks: ['index','moda']
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: "./public/actividades/promedio.html",
-      filename: "./actividades/promedio.html",
-      chunks: ['index','promedio']
+      template: "./public/actividades/medidas_tendencia_central.html",
+      filename: "./actividades/medidas_tendencia_central.html",
+      chunks: ['index','medidasTendenciaCentral']
     }),
     new HtmlWebpackPlugin({
       inject: true,
