@@ -1,4 +1,4 @@
-# Proyecto Figuras Geometricas, Medidas de Tendencia y Calculadora Salario
+# Proyecto Figuras Geometricas, Medidas de Tendencia y Calculadora Descuentos
 
 Es un proyecto basado en el curso practico de javascript de platzi, en el que se nos plantea unos ejercicios practicos, aqui estarian todos los ejercicios terminados de dicha practica, agregando mi toque personal
 
